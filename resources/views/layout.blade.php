@@ -11,7 +11,28 @@
     <title>Registro de personas</title>
   </head>
   <body>
-    <div class="container">
+   
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+   
+      <a href="#" class="navbar-brand">2E-WEB</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_slide">
+        <span class="navbar-toggler-icon"></span>    
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu_slide">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Personas</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Registrar</a>
+              <a href="#" class="dropdown-item">listar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    <div class="container-fluid">
        @yield('content')
     </div>
 

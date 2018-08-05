@@ -21,12 +21,15 @@ class PersonaController extends Controller
 	        $persona->delete();
 	    }
 	    catch(\Illuminate\Database\QueryException $e)
-        {        
-            return redirect('/persona')->withErrors('Este registro contiene datos vinculados que restringen su eliminación!!');
+        {   
+           dd('catch');
+            return redirect('/personas/')->withErrors('Este registro contiene datos vinculados que restringen su eliminación!!');
         }
- 
-		return redirect('/persona')->with('message', 'La persona ha sido eliminada');
+      
+		return redirect('/personas')->with('alert_type','alert-success')
+                                     ->with('message', 'La persona ha sido eliminada');
     }
+                                    
 
     
 }

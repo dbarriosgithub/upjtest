@@ -12,4 +12,4 @@
 */
 
  Route::get('/personas','PersonaController@index');
- Route::get('/personas/delete/{$id}','PersonaController@delete');
+ Route::get('/personas/delete/{id}','PersonaController@delete');
